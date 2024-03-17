@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{ int f;
+    char c[100];
+scanf("%[^\n]s",c);
+int a[26];
+for(int i=0;i<strlen(c);i++)
+{
+    if(c[i]>='A' && c[i]<='Z'){
+      c[i]=c[i]+32;
+    }
+}
+for(int i=0;i<strlen(c);i++)
+{
+   printf("%c",c[i]);
+}
+printf("\n");
+for(int i=0;i<strlen(c);i++)
+{
+    a[c[i]-'a']++;
+}
+for(int i=0;i<26;i++){
+    printf("%c - %d\n",i+'a',a[i]);
+}
+for(int i=0;i<26;i++){
+    if(a[i]==0){
+        f=0;
+    break;
+    }
+    else{
+        f=1;
+    continue;
+
+    }
+}
+if(f==1){
+    printf("panagram");
+}
+else{
+   printf("not a panagram"); 
+}
+}  
+    
+
+
