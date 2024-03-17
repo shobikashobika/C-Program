@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int n,k,s=0,s1=0,res=0;
+    scanf("%d %d",&n,&k);
+    int a[n][k];
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<k;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<k;j++){
+            if(i==j){
+              s=s+ a[i][j]; 
+            }
+            else if(i+j==2){
+                s1=s1+a[i][j];
+            }
+            else{
+               int u=a[i][j];
+            }
+           
+        }
+    }
+    printf("%d\n",s);
+    printf("%d\n",s1);
+    res=s-s1;
+    printf("result:%d\n",res);
+   if(res%2==0)
+    printf("Even");
+    else
+    printf("Odd");    
+    return 0;
+}
+
+
