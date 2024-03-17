@@ -1,0 +1,36 @@
+#include <stdio.h>
+struct TomatoData {
+    char name[50];
+    char gender;
+    char place[50];
+    double rupees;
+};
+
+int main() {
+    struct TomatoData customer;
+    printf("\t\t\t\t\t\033[1;88mWELCOME TO VEG MARKET:\033[0m\n");
+    printf("\n");
+    printf("Enter customer details:\n");
+    printf("Name: ");
+    scanf("%s", customer.name);
+
+    printf("Gender (M/F): ");
+    scanf(" %c", &customer.gender);
+
+    printf("Place       : ");
+    scanf("%s", customer.place);
+
+    printf("Rupees spent: ");
+    scanf("%lf", &customer.rupees);
+    printf("\nCustomer Details:\n");
+    printf("Name        : \a\a\a\a\a\a\a\a\a\a\a\a\a%s\n", customer.name);
+    printf("Gender      : \a\a\a\a\a\a\a\a\a\a\a\a\a%c\n", customer.gender);
+    printf("Place       : \a\a\a\a\a\a\a\a\a\a\a\a\a%s\n", customer.place);
+    printf("Rupees spent: \a\a\a\a\a\a\a\a\a\a\a\a\a%.2f\n", customer.rupees);
+
+    return 0;
+}
+
+
+
+
