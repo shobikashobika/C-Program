@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,n1,sum,sum1,i;
+     printf(" Enter the to find the factorial : ");
+    scanf("%d %d",&n,&n1);
+    int a=n,b=n1;
+    for(int i=1;i<n;i++){
+        if(n%i==0)
+        {
+            sum=sum+i;
+        }
+      
+    }
+    for(int i=1;i<n1;i++){
+        if(n1%i==0)
+        {
+            sum1=sum1+i;
+        }
+      
+    }
+    if(a==sum1 && b==sum){
+    printf("Amicable number"); 
+     }
+    else 
+    {
+       printf("\nNot a Amicable number");  
+    }
+    
+}
+
+
