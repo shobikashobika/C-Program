@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main()
+{
+    int rem,n,p,sum=0,i=1,b;
+    printf("Enter the number to check:");
+    scanf("%d",&n);
+   int temp=n;
+   int a=n;
+  
+    while(n!=0)
+    {
+        n/=10;
+        p++;
+    }
+     printf("%d\n",p);
+     
+     
+     while(temp!=0){ 
+         for(int j=p;j>=1;j--){
+        int res=1;
+        b=temp%10;
+        for(int i=1;i<=j;i++){
+        res=res*b;
+        }
+        sum=sum+res;//27
+        temp/=10;
+     }}
+    if(a==sum)
+        printf("disarium number");
+     else
+         printf("Given number  is not disarium!!!!!!!!!!");
+    
+    return 0;
+}
+
+
+
+
